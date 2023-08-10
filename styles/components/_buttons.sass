@@ -1,12 +1,6 @@
 
 @use "../abstracts/variables" as var
 
-.highlighter
-    background: var.$gradient-highlighter
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
-    font-size: 5.5rem
-
 .clickable
     cursor: pointer
     background: none
@@ -25,3 +19,8 @@
     padding-bottom: 2rem
     border-radius: 5rem
     border: none
+
+.Hero-root
+    &__cta
+        button:first-of-type
+            transform: rotate(180deg)
