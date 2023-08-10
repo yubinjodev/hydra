@@ -1,0 +1,22 @@
+{
+  "name": "hydra",
+  "version": "1.0.0",
+  "description": "Landing page for HYDRA made with HTML, CSS, SASS, JavaScript, jQuery",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "JavaScript",
+    "jQuery"
+  ],
+  "author": "Yubin Jo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yubinjodev/hyrda.git"
+  }
+}
