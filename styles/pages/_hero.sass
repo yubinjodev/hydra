@@ -1,0 +1,30 @@
+@use "../layout/grid" as grid
+@use "../abstracts/_variables" as _variables
+
+.Hero-root
+    z-index: 1
+    @extend .col
+    @extend .a-center
+    gap: 2rem
+
+    img
+        width: 100%
+        height: auto
+        border-radius: 10rem 10rem 10rem 30rem
+    &__title
+        text-align: center
+        font-size: 3.5rem
+    &__cta
+        width: 100%
+        padding-top: 2rem
+        padding-bottom: 2rem
+        padding-left: 1rem
+        padding-right: 1rem
+        border-radius: 10rem
+        background: _variables.$gradient-radial-main
+        @extend .row
+        @extend .a-center
+        i
+            margin-right: 1rem
+        button:first-of-type
+            transform: rotate(180deg)
