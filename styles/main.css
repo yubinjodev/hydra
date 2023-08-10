@@ -3,8 +3,11 @@
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  margin-left: 40px;
-  margin-right: 40px;
+}
+
+main {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -34,4 +37,71 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.clickable, .hamburger {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.flex, .row, .Header-root nav, .Header-root .home a {
+  display: flex;
+}
+
+.row, .Header-root nav, .Header-root .home a {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.j-start {
+  justify-content: flex-start;
+}
+
+.j-end {
+  justify-content: flex-end;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-between, .Header-root nav, .Header-root .home a {
+  justify-content: space-between;
+}
+
+.j-around {
+  justify-content: space-around;
+}
+
+.j-evenly {
+  justify-content: space-evenly;
+}
+
+.a-start {
+  align-items: flex-start;
+}
+
+.a-end {
+  align-items: flex-end;
+}
+
+.a-center, .Header-root nav, .Header-root .home a {
+  align-items: center;
+}
+
+.Header-root nav {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.Header-root nav, .Header-root .home a {
+  gap: 8px;
+}
+.Header-root .home {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

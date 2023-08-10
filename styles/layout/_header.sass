@@ -1,0 +1,15 @@
+@use "grid"
+
+.Header-root
+    nav
+        padding-left: 24px
+        padding-right: 24px
+        padding-top: 8px
+        padding-bottom: 8px
+    nav, .home a
+        @extend .row
+        @extend .j-between
+        @extend .a-center
+        gap: 8px
+    .home
+        cursor: pointer
