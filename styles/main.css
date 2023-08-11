@@ -7,8 +7,11 @@
 }
 
 .Hero-root__title {
-  text-align: center;
   font-size: 3.5rem;
+}
+
+.thin {
+  font-weight: 300;
 }
 
 :root {
@@ -16,6 +19,10 @@
   font-size: 8px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
+}
+
+section > * {
+  margin-bottom: 2rem;
 }
 
 header {
@@ -30,28 +37,20 @@ header {
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
 }
-header:before {
-  content: "";
-  background: #302C42;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 50%;
-  z-index: -1;
-}
 
 body {
   margin: 0;
 }
 
-nav {
+nav, img, hr {
   width: 100%;
 }
 
-img {
-  width: 100%;
+hr {
+  border: none;
+  background: rgba(192, 183, 232, 0.33);
+  height: 2px;
+  margin: 1rem 0 1rem 0;
 }
 
 html {
@@ -96,7 +95,13 @@ p, div, button {
 }
 
 p, div {
-  font-weight: 500;
+  font-weight: 300;
+  line-height: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin: 1rem 0 1rem 0;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -106,7 +111,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  line-height: 1;
+  line-height: normal;
 }
 
 ol, ul {
@@ -188,6 +193,40 @@ img[alt="man wearing vr headset"] {
   border-radius: 7.5rem 17.5rem;
 }
 
+.shadow {
+  box-shadow: 0 0 0 3rem rgba(14, 14, 14, 0.3215686275);
+}
+
+img[alt="woman using vr headset"] {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 23rem;
+  aspect-ratio: 1/1;
+}
+
+img[alt="another woman wearing vr headset"] {
+  border-radius: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 20rem;
+}
+
+.Tech-root__banner-container {
+  position: relative;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+}
+.Tech-root h3 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
 .flex, .col, .row, .Hero-root__cta {
   display: flex;
 }
@@ -244,4 +283,63 @@ img[alt="man wearing vr headset"] {
   padding-right: 1rem;
   border-radius: 10rem;
   background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+}
+
+.Build-root article {
+  background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+  padding: 4rem;
+  border-radius: 5rem;
+}
+
+.How-root article h4 {
+  font-size: 2.5rem;
+}
+.How-root__ellipse {
+  border-radius: 50%;
+  padding: 5rem;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  position: relative;
+  margin: 4rem 0;
+  color: #302C42;
+}
+.How-root__ellipse h4 {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: 0;
+  font-size: 5rem !important;
+}
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+:focus-visible {
+  outline: none !important;
+  border: 2px solid #fff;
+  box-shadow: inset 0 0 0.5em 0 #8f7aed, 0 0 1em 0.5em #8f7aed;
+}
+
+.Contact-root {
+  background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+  padding: 5rem 3rem;
+  border-radius: 5rem;
+}
+.Contact-root input, .Contact-root textarea {
+  width: 100% !important;
+  margin-bottom: 3rem;
+  border: 1px solid #fff;
+  border-radius: 5rem;
+  background: none;
+  padding: 2rem 0;
+  color: #fff;
+  padding-left: 2rem;
+  resize: none;
+  font-family: inherit;
+}
+.Contact-root textarea {
+  height: 27rem !important;
 }/*# sourceMappingURL=main.css.map */

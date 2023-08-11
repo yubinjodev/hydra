@@ -7,7 +7,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
         <meta charset="UTF-8">
         <meta name="description" content="Landing page for HYDRA made with HTML, CSS, SASS, JavaScript, jQuery">
@@ -55,7 +55,7 @@
             </section>
 
             <section class="Intro-root col a-center" id="intro">
-                <h2 class="Intro-root__title">INTRODUCTION TO HYDRA VR</h2>
+                <h2 class="Intro-root__title">INTRODUCTION <span class="thin">TO HYDRA VR</span></h2>
                 <img alt="man wearing vr headset" src="/assets/images/about.png"/>
                 <p>
                     Eget mi proin sed libero enim sed faucibus turpis. Nisl 
@@ -74,11 +74,54 @@
                 <button class="gradient-btn">LET'S GET IN TOUCH</button>
             </section>
 
-            <section class="Build-root" id="build"></section>
+            <section class="Build-root" id="build">
+                <h2>WHY BUILD <span class="thin">WITH HYDRA</span></h2>
+                <article class="col a-center">
+                    <img class="shadow" alt="woman using vr headset" src="/assets/images/simulation.png"/>
+                    <h3>STIMULATION</h3>
+                    <hr>
+                    <p>Vitae sapien pellentesque habitant morbi
+                        nunc. Viverra aliquet  porttitor rhoncus 
+                        libero justo laoreet sit amet vitae.
+                    </p>
+                    <button class="gradient-btn">TRY IT NOW</button>
+                </article>
+            </section>
 
-            <section class="Reason-root" id="reason"></section>
+            <section class="Tech-root col a-center">
+                <div class="Tech-root__banner-container">
+                    <img alt="another woman wearing vr headset" src="/assets/images/banner.png"/>
+                    <h3>TECHNOLOGIES & HARDWARE <span class="thin">USED BY HYDRA VR.</span></h3>
+                </div>
+                <article class="Tech-root__card-container">
+                    <img alt="vive company logo" src="/assets/images/tech/vive.png"/>
+                </article>
+            </section>
 
-            <section class="Contact-root" id="contact"></section>
+            <section class="How-root" id="how">
+                <article class="col a-center">
+                    <h3>HOW WE BUILD <span class="thin">WITH HYDRA VR?</span></h3>
+                    <div class="How-root__ellipse shadow">
+                        <h4>01</h4>
+                    </div>
+                    <h4>3D Conception & Desgin</h4>
+                </article>
+            </section>
+
+            <section class="Contact-root col a-center" id="contact">
+                <h2>JOIN HYDRA</h2>
+                <hr>
+                <p>Let's Build Your VR Experience</p>
+                <form class="col a-center">
+                    <input placeholder="First Name"/>
+                    <input placeholder="Last Name"/>
+                    <input placeholder="Email" type="email"/>
+                    <input placeholder="Phone Number" type="number"/>
+                    <input placeholder="Subject"/>
+                    <textarea placeholder="Tell Us Something..."></textarea>
+                    <button class="gradient-btn">SEND TO HYDRA</button>
+                </form>
+            </section>
         </main>
 
         <footer class="Footer-root"></footer>
