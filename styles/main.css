@@ -14,11 +14,28 @@
   font-weight: 300;
 }
 
+footer h1, footer h2 {
+  font-size: 2rem;
+}
+
 :root {
   background: #302C42;
   font-size: 8px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  margin: 4rem 3rem;
+  overflow: hidden;
+}
+footer > * {
+  margin-bottom: 2rem;
 }
 
 section > * {
@@ -116,6 +133,7 @@ body {
 
 ol, ul {
   list-style: none;
+  padding: 0;
 }
 
 blockquote, q {
@@ -155,7 +173,7 @@ table {
   transform: rotate(180deg);
 }
 
-.lines {
+.Hero-root .lines {
   position: absolute;
   top: 0;
   left: 0;
@@ -164,7 +182,7 @@ table {
   z-index: -1;
   opacity: 50%;
 }
-.lines img {
+.Hero-root .lines img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -173,10 +191,35 @@ table {
   transform: translate(-50%, -50%);
 }
 
+.Footer-root .lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 50%;
+}
+.Footer-root .lines img {
+  width: 300%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 img[alt="main logo"] {
   width: auto;
   height: auto;
   max-width: 10rem;
+}
+
+footer img[alt="main logo"] {
+  width: 100%;
+  height: 100%;
+  max-width: 22rem !important;
 }
 
 img[alt="text logo"] {
@@ -227,6 +270,7 @@ img[alt="another woman wearing vr headset"] {
   transform: translate(-50%, -50%);
   font-size: 3rem;
 }
+
 .flex, .col, .row, .Hero-root__cta {
   display: flex;
 }
