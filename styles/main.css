@@ -18,6 +18,86 @@ footer h1, footer h2 {
   font-size: 2rem;
 }
 
+@media ((min-width: 900px)) {
+  .About-root, .Intro-root, .About-root {
+    flex-direction: row !important;
+    gap: 2rem;
+  }
+}
+
+@media ((min-width: 900px)) {
+  .Hero-root {
+    flex-direction: row-reverse !important;
+    gap: 2rem;
+  }
+}
+
+@media ((min-width: 900px)) {
+  .Build-root__cards, .Build-root__card-container, .Tech-root__cards, .Tech-root__card-container, .How-root__cards, .How-root__card-container {
+    justify-content: space-evenly !important;
+    flex-direction: row !important;
+  }
+}
+@media ((min-width: 1200px)) {
+  .Build-root__cards, .Build-root__card-container, .Tech-root__cards, .Tech-root__card-container, .How-root__cards, .How-root__card-container {
+    justify-content: space-between !important;
+  }
+}
+
+.How-root .lines {
+  display: none;
+}
+@media ((min-width: 900px)) {
+  .How-root .lines {
+    display: block;
+  }
+}
+.How-root__cards article {
+  width: 100%;
+  min-width: 31rem;
+}
+
+.Contact-root input, .Contact-root textarea {
+  width: 100%;
+}
+
+@media ((min-width: 900px)) {
+  .Contact-root__input-container, .Footer-root {
+    flex-direction: row !important;
+    gap: 1rem;
+  }
+  .Contact-root__input-container .fullWidth, .Footer-root .fullWidth {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.Footer-root__nav, .Footer-root__links {
+  display: none;
+}
+@media ((min-width: 900px)) {
+  .Footer-root__nav, .Footer-root__links {
+    display: block;
+  }
+}
+
+@media ((min-width: 900px)) {
+  .About-root__text {
+    width: 50vw;
+  }
+}
+@media ((min-width: 900px)) {
+  .About-root__text, .About-root__title {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.Build-root article {
+  width: 100%;
+  max-width: 38rem !important;
+}
+
 :root {
   background: #302C42;
   font-size: 8px;
@@ -72,6 +152,10 @@ hr {
 
 html {
   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 main {
@@ -173,7 +257,7 @@ table {
   transform: rotate(180deg);
 }
 
-.Hero-root .lines {
+.Hero-root .lines, .How-root .lines {
   position: absolute;
   top: 0;
   left: 0;
@@ -182,7 +266,7 @@ table {
   z-index: -1;
   opacity: 50%;
 }
-.Hero-root .lines img {
+.Hero-root .lines img, .How-root .lines img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -230,10 +314,12 @@ img[alt="text logo"] {
 
 img[alt="woman wearing vr headset"] {
   border-radius: 10rem 10rem 10rem 30rem;
+  max-width: 61rem;
 }
 
 img[alt="man wearing vr headset"] {
   border-radius: 7.5rem 17.5rem;
+  max-width: 65rem;
 }
 
 .shadow {
@@ -340,15 +426,19 @@ img[alt="another woman wearing vr headset"] {
 }
 .How-root__ellipse {
   border-radius: 50%;
-  padding: 5rem;
+  padding: 2rem;
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   position: relative;
   margin: 4rem 0;
   color: #302C42;
+  width: 100%;
+  max-width: 19rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .How-root__ellipse h4 {
-  width: 100%;
-  aspect-ratio: 1/1;
   margin: 0;
   font-size: 5rem !important;
 }

@@ -1,4 +1,4 @@
-$breakpoints: ("xs":(min-width: 0px),"sm":(min-width: 600px),"md":(min-width: 900px),"lg":(min-width: 1200px),)
+$breakpoints: ("xs":"(min-width: 0px)","sm":"(min-width: 600px)","md":"(min-width: 900px)","lg":"(min-width: 1200px)")
 
 @mixin breakpoint($user-value)
     $my-map: map-get($breakpoints, $user-value)

@@ -1,0 +1,56 @@
+@use "breakpoints"
+
+.About-root, .Intro-root, .About-root
+    @include breakpoints.breakpoint(md)
+        flex-direction: row !important
+        gap: 2rem
+
+.Hero-root
+    @include breakpoints.breakpoint(md)
+        flex-direction: row-reverse !important
+        gap: 2rem
+
+.Build-root, .Tech-root, .How-root
+    &__cards, &__card-container
+        @include breakpoints.breakpoint(md)
+            justify-content: space-evenly !important
+            flex-direction: row !important
+        @include breakpoints.breakpoint(lg)
+            justify-content: space-between !important
+
+.How-root
+    .lines
+        display: none
+        @include breakpoints.breakpoint(md)
+            display: block
+    &__cards
+        article
+            width: 100%
+            min-width: 31rem
+
+.Contact-root
+    input, textarea
+        width: 100%
+
+.Contact-root__input-container, .Footer-root
+    @include breakpoints.breakpoint(md)
+        flex-direction: row !important
+        gap: 1rem
+        .fullWidth
+            display: flex
+            flex-direction: column
+
+.Footer-root
+    &__nav, &__links
+        display: none
+        @include breakpoints.breakpoint(md)
+            display: block
+
+.About-root
+    &__text
+        @include breakpoints.breakpoint(md)
+            width: 50vw
+    &__text, &__title
+        @include breakpoints.breakpoint(md)
+            align-items: flex-start
+            text-align: left

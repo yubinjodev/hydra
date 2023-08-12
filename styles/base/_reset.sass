@@ -1,5 +1,10 @@
 @use "../abstracts/variables" as var
 
+.Build-root
+    article
+        width: 100%
+        max-width: 38rem !important
+
 :root
     background: var.$main-bg
     font-size: 8px
@@ -44,6 +49,9 @@ hr
 
 html
     box-sizing: border-box
+
+*, *:before, *:after
+    box-sizing: inherit
 
 main
     margin-left: 2rem

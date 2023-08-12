@@ -37,55 +37,103 @@
         </header>
 
         <main class="Main-root" id="main">
-            <section class="Hero-root col a-center" id="hero">
+            <section class="Hero-root col a-center j-around" id="hero">
                 <div class="lines">
                     <img alt="background decoration" src="/assets/svg/shapes/hero/line1.svg"/>
                     <img alt="background decoration" src="/assets/svg/shapes/hero/line2.svg"/>
                     <img alt="background decoration" src="/assets/svg/shapes/hero/line3.svg"/>
                 </div>
-                <img alt="woman wearing vr headset" src="/assets/images/main.png"/>
-                <h1 class="Hero-root__title"><span class="highlighter">Dive</span> Into The Depths Of <span class="highlighter">Virtual Reality</span></h1>
-                <button class="gradient-btn">BUILD YOUR WORLD</button>
-                <div class="Hero-root__cta">
-                    <button class="clickable"><img alt="arrow left" src="/assets/svg/icons/arrow-small-right.svg"/></button>
-                    <i><img alt="location icon" src="/assets/svg/icons/location.svg"/></i>
-                    <p>Union St, Seattle, WA 98101, United States</p>
-                    <button class="clickable"><img alt="arrow right" src="/assets/svg/icons/arrow-small-right.svg"/></button>
+
+                    <img alt="woman wearing vr headset" src="/assets/images/main.png"/>
+
+                <div class="col a-center" style="gap: 2rem;">
+                    <h1 class="Hero-root__title"><span class="highlighter">Dive</span> Into The Depths Of <span class="highlighter">Virtual Reality</span></h1>
+                    <button class="gradient-btn">BUILD YOUR WORLD</button>
+                    <div class="Hero-root__cta">
+                        <button class="clickable"><img alt="arrow left" src="/assets/svg/icons/arrow-small-right.svg"/></button>
+                        <i><img alt="location icon" src="/assets/svg/icons/location.svg"/></i>
+                        <p>Union St, Seattle, WA 98101, United States</p>
+                        <button class="clickable"><img alt="arrow right" src="/assets/svg/icons/arrow-small-right.svg"/></button>
+                    </div>
                 </div>
             </section>
 
-            <section class="Intro-root col a-center" id="intro">
+            <section class="Intro-root col a-center">
                 <h2 class="Intro-root__title">INTRODUCTION <span class="thin">TO HYDRA VR</span></h2>
-                <img alt="man wearing vr headset" src="/assets/images/about.png"/>
                 <p>
-                    Eget mi proin sed libero enim sed faucibus turpis. Nisl 
-                    rhoncus mattis rhoncus urna neque viverra justo. Vivamus 
-                    at augue eget arcu dictum. Ultrices gravida dictum fusce 
-                    ut placerat orci. Aenean et tortor at risus viverra adipisci
-                    ng at in. Mattis aliquam faucibus purus in massa. Est 
-                    placerat in egestas erat imperdiet sed. Consequat sem
-                    per viverra nam libero justo laoreet sit amet. Aliquam 
-                    etiam erat velit scelerisque in dictum non consectetur 
-                    a. Laoreet sit amet cursus sit amet. Vel eros donec ac 
-                    odio tempor orci dapibus. Sem nulla pharetra diam sit 
-                    amet nisl suscipit adipiscing bibendum. Leo a diam 
-                    sollicitudin tempor.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+                    nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+                    quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+                    lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
                 </p>
-                <button class="gradient-btn">LET'S GET IN TOUCH</button>
+            </section>
+
+            <section class="About-root col a-center j-around" id="About">
+                <img alt="man wearing vr headset" src="/assets/images/about.png"/>
+                <div class="About-root__text col a-center">
+                    <h2 class="About-root__title">ABOUT <span class="thin">HYDRA VR</span></h2>
+                    <p>
+                        Eget mi proin sed libero enim sed faucibus turpis. Nisl 
+                        rhoncus mattis rhoncus urna neque viverra justo. Vivamus 
+                        at augue eget arcu dictum. Ultrices gravida dictum fusce 
+                        ut placerat orci. Aenean et tortor at risus viverra adipisci
+                        ng at in. Mattis aliquam faucibus purus in massa. Est 
+                        placerat in egestas erat imperdiet sed. Consequat sem
+                        per viverra nam libero justo laoreet sit amet. Aliquam 
+                        etiam erat velit scelerisque in dictum non consectetur 
+                        a. Laoreet sit amet cursus sit amet. Vel eros donec ac 
+                        odio tempor orci dapibus. Sem nulla pharetra diam sit 
+                        amet nisl suscipit adipiscing bibendum. Leo a diam 
+                        sollicitudin tempor.
+                    </p>
+                    <button class="gradient-btn">LET'S GET IN TOUCH</button>
+                </div>
             </section>
 
             <section class="Build-root" id="build">
                 <h2>WHY BUILD <span class="thin">WITH HYDRA</span></h2>
-                <article class="col a-center">
-                    <img class="shadow" alt="woman using vr headset" src="/assets/images/simulation.png"/>
-                    <h3>STIMULATION</h3>
-                    <hr>
-                    <p>Vitae sapien pellentesque habitant morbi
-                        nunc. Viverra aliquet  porttitor rhoncus 
-                        libero justo laoreet sit amet vitae.
-                    </p>
-                    <button class="gradient-btn">TRY IT NOW</button>
-                </article>
+                <div class="Build-root__cards row j-center a-center" style="flex-wrap: wrap; gap: 1rem">
+                    <article class="col a-center">
+                        <img class="shadow" alt="woman using vr headset" src="/assets/images/simulation.png"/>
+                        <h3>STIMULATION</h3>
+                        <hr>
+                        <p>Vitae sapien pellentesque habitant morbi
+                            nunc. Viverra aliquet  porttitor rhoncus 
+                            libero justo laoreet sit amet vitae.
+                        </p>
+                        <button class="gradient-btn">TRY IT NOW</button>
+                    </article>
+                    <article class="col a-center">
+                        <img class="shadow" alt="woman using vr headset" src="/assets/images/education.png"/>
+                        <h3>EDUCATION</h3>
+                        <hr>
+                        <p>Vitae sapien pellentesque habitant morbi
+                            nunc. Viverra aliquet  porttitor rhoncus 
+                            libero justo laoreet sit amet vitae.
+                        </p>
+                        <button class="gradient-btn">TRY IT NOW</button>
+                    </article>
+                    <article class="col a-center">
+                        <img class="shadow" alt="woman using vr headset" src="/assets/images/self-care.png"/>
+                        <h3>SELF-CARE</h3>
+                        <hr>
+                        <p>Vitae sapien pellentesque habitant morbi
+                            nunc. Viverra aliquet  porttitor rhoncus 
+                            libero justo laoreet sit amet vitae.
+                        </p>
+                        <button class="gradient-btn">TRY IT NOW</button>
+                    </article>
+                    <article class="col a-center">
+                        <img class="shadow" alt="woman using vr headset" src="/assets/images/outdoor.png"/>
+                        <h3>OUTDOOR</h3>
+                        <hr>
+                        <p>Vitae sapien pellentesque habitant morbi
+                            nunc. Viverra aliquet  porttitor rhoncus 
+                            libero justo laoreet sit amet vitae.
+                        </p>
+                        <button class="gradient-btn">TRY IT NOW</button>
+                    </article>
+                </div>
             </section>
 
             <section class="Tech-root col a-center">
@@ -93,30 +141,71 @@
                     <img alt="another woman wearing vr headset" src="/assets/images/banner.png"/>
                     <h3>TECHNOLOGIES & HARDWARE <span class="thin">USED BY HYDRA VR.</span></h3>
                 </div>
-                <article class="Tech-root__card-container">
-                    <img alt="vive company logo" src="/assets/images/tech/vive.png"/>
+                <article class="Tech-root__card-container col a-center fullWidth" style="gap:2rem">
+                    <div class="row a-center">
+                        <img alt="vive company logo" src="/assets/images/tech/unreal.png"/>
+                    </div>
+                    <div class="row a-center">
+                        <img alt="vive company logo" src="/assets/images/tech/unity.png"/>
+                    </div>
+                    <div class="row a-center">
+                        <img alt="vive company logo" src="/assets/images/tech/oculus.png"/>
+                    </div>
+                    <div class="row a-center">
+                        <img alt="vive company logo" src="/assets/images/tech/vive.png"/>
+                    </div>
                 </article>
             </section>
 
-            <section class="How-root" id="how">
-                <article class="col a-center">
-                    <h3>HOW WE BUILD <span class="thin">WITH HYDRA VR?</span></h3>
-                    <div class="How-root__ellipse shadow">
-                        <h4>01</h4>
-                    </div>
-                    <h4>3D Conception & Desgin</h4>
-                </article>
+            <section class="How-root" id="how" style="position: relative;">
+                <div class="lines">
+                    <img alt="background decoration" src="/assets/svg/shapes/how/line.svg"/>
+                </div>
+
+                <h3>HOW WE BUILD <span class="thin">WITH HYDRA VR?</span></h3>
+                <div class="How-root__cards col a-center">
+                    <article class="col a-center">
+                        <div class="How-root__ellipse shadow">
+                            <h4>01</h4>
+                        </div>
+                        <h4>3D Conception & Desgin</h4>
+                    </article>
+                    <article class="col a-center">
+                        <div class="How-root__ellipse shadow">
+                            <h4>02</h4>
+                        </div>
+                        <h4>Interaction Design</h4>
+                    </article>
+                    <article class="col a-center">
+                        <div class="How-root__ellipse shadow">
+                            <h4>03</h4>
+                        </div>
+                        <h4>VR World User Testing</h4>
+                    </article>
+                    <article class="col a-center">
+                        <div class="How-root__ellipse shadow">
+                            <h4>04</h4>
+                        </div>
+                        <h4>Hydra VR Deploy</h4>
+                    </article>
+                </div>
             </section>
 
             <section class="Contact-root col a-center" id="contact">
                 <h2>JOIN HYDRA</h2>
                 <hr>
                 <p>Let's Build Your VR Experience</p>
-                <form class="col a-center">
-                    <input placeholder="First Name"/>
-                    <input placeholder="Last Name"/>
-                    <input placeholder="Email" type="email"/>
-                    <input placeholder="Phone Number" type="number"/>
+                <form class="col a-center fullWidth">
+                    <div class="Contact-root__input-container col fullWidth j-between">
+                        <div class="fullWidth">
+                            <input placeholder="First Name"/>
+                            <input placeholder="Last Name"/>
+                        </div>
+                        <div class="fullWidth">
+                            <input placeholder="Email" type="email"/>
+                            <input placeholder="Phone Number" type="number"/>
+                        </div>
+                    </div>
                     <input placeholder="Subject"/>
                     <textarea placeholder="Tell Us Something..."></textarea>
                     <button class="gradient-btn">SEND TO HYDRA</button>
@@ -124,27 +213,53 @@
             </section>
         </main>
 
-        <footer class="Footer-root col a-center">
+        <footer class="Footer-root col a-center j-around">
             <div class="lines" >
                 <img alt="background decoration" src="/assets/svg/shapes/footer/line1.svg" />
                 <img alt="background decoration" src="/assets/svg/shapes/footer/line2.svg" />
             </div>
         
             <img alt="main logo" src="assets/svg/shapes/logo.svg"/>
-            <h1>SOCIALIZE WITH HYDRA</h1>
-            <ul class="row j-between fullWidth">
-                <li><a><img alt="facebook logo" src="/assets/svg/socials/facebook.svg"/></a></li>
-                <li><a><img alt="twitter logo" src="/assets/svg/socials/twitter.svg"/></a></li>
-                <li><a><img alt="linkedin logo" src="/assets/svg/socials/linkedin.svg"/></a></li>
-                <li><a><img alt="youtube logo" src="/assets/svg/socials/youtube.svg"/></a></li>
-                <li><a><img alt="instagram logo" src="/assets/svg/socials/instagram.svg"/></a></li>
-                <li><a><img alt="pinterest logo" src="/assets/svg/socials/pinterest.svg"/></a></li>
-            </ul>
-            <button class="gradient-btn">BUILD YOUR WORLD</button>
-            <hr>
-            <h2>2023 © HYDRA LANDING PAGE </h2>
-            <h2>BY ZINE. E. FALOUTI</h2>
-            <h2>ALL RIGHTS RESERVED</h2>
+            
+            <div class="Footer-root__nav">
+                <nav>
+                    <ul>
+                        <li><a>ABOUT</a></li>
+                        <li><a>SERVICES</a></li>
+                        <li><a>TECHNOLOGIES</a></li>
+                        <li><a>HOW TO</a></li>
+                        <li><a>JOIN HYDRA</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="Footer-root__links">
+                <nav>
+                    <ul>
+                        <li><a>F.A.Q.</a></li>
+                        <li><a>SITEMAP</a></li>
+                        <li><a>CONDITIONS</a></li>
+                        <li><a>LICENSES</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="Footer-root__socials j-around a-center">
+                <h1>SOCIALIZE WITH HYDRA</h1>
+                <ul class="row j-between ">
+                    <li><a><img alt="facebook logo" src="/assets/svg/socials/facebook.svg"/></a></li>
+                    <li><a><img alt="twitter logo" src="/assets/svg/socials/twitter.svg"/></a></li>
+                    <li><a><img alt="linkedin logo" src="/assets/svg/socials/linkedin.svg"/></a></li>
+                    <li><a><img alt="youtube logo" src="/assets/svg/socials/youtube.svg"/></a></li>
+                    <li><a><img alt="instagram logo" src="/assets/svg/socials/instagram.svg"/></a></li>
+                    <li><a><img alt="pinterest logo" src="/assets/svg/socials/pinterest.svg"/></a></li>
+                </ul>
+                <button class="gradient-btn">BUILD YOUR WORLD</button>
+                <hr>
+                <h2>2023 © HYDRA LANDING PAGE </h2>
+                <h2>BY ZINE. E. FALOUTI</h2>
+                <h2>ALL RIGHTS RESERVED</h2>
+            </div>
         </footer>
     </body>
 </html>
