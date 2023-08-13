@@ -18,12 +18,40 @@ footer h1, footer h2 {
   font-size: 2rem;
 }
 
-.Intro-root .row img[alt="arrow right"] {
+.About-root .lines {
   display: none;
 }
 @media ((min-width: 900px)) {
-  .Intro-root .row img[alt="arrow right"] {
+  .About-root .lines {
     display: block;
+  }
+}
+
+.Build-root div.row.j-center p {
+  display: none;
+}
+@media ((min-width: 900px)) {
+  .Build-root div.row.j-center p {
+    display: flex;
+  }
+}
+.Build-root div.row.j-center div.row.a-center img[alt="arrow right"] {
+  display: none;
+}
+@media ((min-width: 900px)) {
+  .Build-root div.row.j-center div.row.a-center img[alt="arrow right"] {
+    display: flex;
+  }
+}
+
+.Intro-root .row,
+.Intro-root img[alt="arrow right"], .Intro-root .Intro-root > p.fullWidth {
+  display: none;
+}
+@media ((min-width: 900px)) {
+  .Intro-root .row,
+  .Intro-root img[alt="arrow right"], .Intro-root .Intro-root > p.fullWidth {
+    display: flex;
   }
 }
 
@@ -44,7 +72,7 @@ footer h1, footer h2 {
 }
 
 @media ((min-width: 900px)) {
-  .Hero-root__container {
+  .Hero-root__container, .About-root__container {
     width: 100%;
     flex-direction: row-reverse !important;
     justify-content: space-around !important;
@@ -52,16 +80,16 @@ footer h1, footer h2 {
   }
 }
 @media ((min-width: 900px)) {
-  .Hero-root__text {
+  .Hero-root__text, .About-root__text {
     align-items: flex-start !important;
     text-align: left;
   }
 }
-.Hero-root__build {
+.Hero-root__build, .About-root__build {
   display: none;
 }
 @media ((min-width: 900px)) {
-  .Hero-root__build {
+  .Hero-root__build, .About-root__build {
     display: flex;
   }
 }
@@ -291,6 +319,18 @@ table {
   transform: rotate(180deg);
 }
 
+.About-root {
+  position: relative;
+}
+.About-root .lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .Hero-root .lines, .How-root .lines {
   position: absolute;
   top: 0;
@@ -378,6 +418,11 @@ img[alt="another woman wearing vr headset"] {
 img[alt=divider] {
   height: 100%;
   width: auto;
+}
+
+img[alt="arrow right"], img[alt="arrow left"] {
+  width: 100%;
+  max-width: 10rem;
 }
 
 .Tech-root__banner-container {

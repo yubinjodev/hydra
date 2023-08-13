@@ -1,11 +1,29 @@
 @use "breakpoints"
 
-.Intro-root
-    .row
-        img[alt="arrow right"]
+.About-root
+    .lines
+        display: none
+        @include breakpoints.breakpoint(md)
+            display: block
+
+.Build-root
+    div.row.j-center
+        p
             display: none
             @include breakpoints.breakpoint(md)
-                display: block
+                display: flex
+        div.row.a-center
+            img[alt="arrow right"]
+                display: none
+                @include breakpoints.breakpoint(md)
+                    display: flex
+
+.Intro-root
+    .row,
+        img[alt="arrow right"], .Intro-root > p.fullWidth
+        display: none
+        @include breakpoints.breakpoint(md)
+            display: flex
 
 .Hero-root
     &__cta
@@ -20,7 +38,7 @@
         flex-direction: row !important
         gap: 2rem
 
-.Hero-root
+.Hero-root, .About-root
     &__container
         @include breakpoints.breakpoint(md)
             width: 100%
