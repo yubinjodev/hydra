@@ -1,5 +1,6 @@
 @use "../layout/grid" as grid
 @use "../abstracts/_variables" as _variables
+@use "../abstracts/breakpoints" as breakpoints
 
 .Hero-root
     &__cta
@@ -10,8 +11,16 @@
         padding-right: 1rem
         border-radius: 10rem
         background: _variables.$gradient-radial-main
+        justify-content: space-around
         @extend .row
         @extend .a-center
+        .row > .col > p
+            margin: 0
+        .row, img[alt="divider"], .row > .col > h3
+            display: none
+            text-align: left !important
+        .row:first-of-type
+            display: flex
 
 .Build-root
     article

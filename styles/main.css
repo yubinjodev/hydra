@@ -18,6 +18,24 @@ footer h1, footer h2 {
   font-size: 2rem;
 }
 
+.Intro-root .row img[alt="arrow right"] {
+  display: none;
+}
+@media ((min-width: 900px)) {
+  .Intro-root .row img[alt="arrow right"] {
+    display: block;
+  }
+}
+
+@media ((min-width: 1200px)) {
+  .Hero-root__cta .row, .Hero-root__cta .row > .col > h3, .Hero-root__cta img[alt=divider] {
+    display: flex !important;
+  }
+  .Hero-root__cta button.clickable {
+    display: none;
+  }
+}
+
 @media ((min-width: 900px)) {
   .About-root, .Intro-root, .About-root {
     flex-direction: row !important;
@@ -26,9 +44,25 @@ footer h1, footer h2 {
 }
 
 @media ((min-width: 900px)) {
-  .Hero-root {
+  .Hero-root__container {
+    width: 100%;
     flex-direction: row-reverse !important;
+    justify-content: space-around !important;
     gap: 2rem;
+  }
+}
+@media ((min-width: 900px)) {
+  .Hero-root__text {
+    align-items: flex-start !important;
+    text-align: left;
+  }
+}
+.Hero-root__build {
+  display: none;
+}
+@media ((min-width: 900px)) {
+  .Hero-root__build {
+    display: flex;
   }
 }
 
@@ -82,12 +116,12 @@ footer h1, footer h2 {
 }
 
 @media ((min-width: 900px)) {
-  .About-root__text {
+  .About-root__text, .Hero-root__text {
     width: 50vw;
   }
 }
 @media ((min-width: 900px)) {
-  .About-root__text, .About-root__title {
+  .About-root__text, .About-root__title, .Hero-root__text, .Hero-root__title {
     align-items: flex-start;
     text-align: left;
   }
@@ -341,6 +375,11 @@ img[alt="another woman wearing vr headset"] {
   height: 20rem;
 }
 
+img[alt=divider] {
+  height: 100%;
+  width: auto;
+}
+
 .Tech-root__banner-container {
   position: relative;
   width: 100%;
@@ -363,10 +402,12 @@ img[alt="another woman wearing vr headset"] {
 
 .row, .Hero-root__cta {
   flex-direction: row;
+  gap: 2rem;
 }
 
 .col {
   flex-direction: column;
+  gap: 2rem;
 }
 
 .j-start {
@@ -413,6 +454,17 @@ img[alt="another woman wearing vr headset"] {
   padding-right: 1rem;
   border-radius: 10rem;
   background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+  justify-content: space-around;
+}
+.Hero-root__cta .row > .col > p, .Hero-root__cta .Hero-root__cta > .col > p {
+  margin: 0;
+}
+.Hero-root__cta .row, .Hero-root__cta .Hero-root__cta, .Hero-root__cta img[alt=divider], .Hero-root__cta .row > .col > h3, .Hero-root__cta .Hero-root__cta > .col > h3 {
+  display: none;
+  text-align: left !important;
+}
+.Hero-root__cta .row:first-of-type, .Hero-root__cta .Hero-root__cta:first-of-type {
+  display: flex;
 }
 
 .Build-root article {

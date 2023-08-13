@@ -1,14 +1,41 @@
 @use "breakpoints"
 
+.Intro-root
+    .row
+        img[alt="arrow right"]
+            display: none
+            @include breakpoints.breakpoint(md)
+                display: block
+
+.Hero-root
+    &__cta
+        @include breakpoints.breakpoint(lg)
+            .row, .row > .col > h3, img[alt="divider"]
+                display: flex !important
+            button.clickable
+                display: none
+
 .About-root, .Intro-root, .About-root
     @include breakpoints.breakpoint(md)
         flex-direction: row !important
         gap: 2rem
 
 .Hero-root
-    @include breakpoints.breakpoint(md)
-        flex-direction: row-reverse !important
-        gap: 2rem
+    &__container
+        @include breakpoints.breakpoint(md)
+            width: 100%
+            flex-direction: row-reverse !important
+            justify-content: space-around !important
+            gap: 2rem
+    &__text
+        @include breakpoints.breakpoint(md)
+            align-items: flex-start !important
+            text-align: left
+    &__build
+        button .clickable
+        display: none
+        @include breakpoints.breakpoint(md)
+            display: flex
 
 .Build-root, .Tech-root, .How-root
     &__cards, &__card-container
@@ -46,7 +73,7 @@
         @include breakpoints.breakpoint(md)
             display: block
 
-.About-root
+.About-root, .Hero-root
     &__text
         @include breakpoints.breakpoint(md)
             width: 50vw
