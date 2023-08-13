@@ -1,5 +1,14 @@
 @use "breakpoints"
 
+.Footer-root
+    .lines
+        @include breakpoints.breakpoint(md)
+            top: -50rem !important
+        @include breakpoints.breakpoint(lg)
+            top: -70rem !important
+        @include breakpoints.breakpoint(xl)
+            top: -90rem !important
+
 .About-root
     .lines
         display: none

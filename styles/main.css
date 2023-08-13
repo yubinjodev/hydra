@@ -18,6 +18,22 @@ footer h1, footer h2 {
   font-size: 2rem;
 }
 
+@media ((min-width: 900px)) {
+  .Footer-root .lines {
+    top: -50rem !important;
+  }
+}
+@media ((min-width: 1200px)) {
+  .Footer-root .lines {
+    top: -70rem !important;
+  }
+}
+@media ((min-width: 1500px)) {
+  .Footer-root .lines {
+    top: -90rem !important;
+  }
+}
+
 .About-root .lines {
   display: none;
 }
