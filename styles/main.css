@@ -34,11 +34,11 @@ footer h1, footer h2 {
   }
 }
 
-.About-root .lines {
+.About-root .lines, .Build-root .lines {
   display: none;
 }
 @media ((min-width: 900px)) {
-  .About-root .lines {
+  .About-root .lines, .Build-root .lines {
     display: block;
   }
 }
@@ -242,7 +242,7 @@ main {
 }
 
 main > * {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 h1 {
@@ -347,7 +347,10 @@ table {
   z-index: -1;
 }
 
-.Hero-root .lines, .How-root .lines {
+.Hero-root, .How-root, .Build-root {
+  position: relative;
+}
+.Hero-root .lines, .How-root .lines, .Build-root .lines {
   position: absolute;
   top: 0;
   left: 0;
@@ -356,7 +359,7 @@ table {
   z-index: -1;
   opacity: 50%;
 }
-.Hero-root .lines img, .How-root .lines img {
+.Hero-root .lines img, .How-root .lines img, .Build-root .lines img {
   width: 100%;
   height: 100%;
   position: absolute;
