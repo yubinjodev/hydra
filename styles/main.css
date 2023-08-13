@@ -193,6 +193,14 @@ footer h1, footer h2 {
   }
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 .Menu-root {
   display: none;
   overflow: hidden;
@@ -354,7 +362,7 @@ table {
   border-spacing: 0;
 }
 
-.clickable, .hamburger {
+.clickable, .hamburger, button {
   cursor: pointer;
   background: none;
   border: none;
