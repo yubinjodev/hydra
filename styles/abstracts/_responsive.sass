@@ -1,6 +1,10 @@
 @use "breakpoints"
 
 .Footer-root
+    &__copyright
+        display: none
+        @include breakpoints.breakpoint(md)
+            display: block
     .lines
         @include breakpoints.breakpoint(md)
             top: -50rem !important
@@ -80,13 +84,13 @@
     &__cards
         article
             width: 100%
-            min-width: 31rem
+            min-width: 10rem
 
 .Contact-root
     input, textarea
         width: 100%
 
-.Contact-root__input-container, .Footer-root
+.Contact-root__input-container, .Footer-root__container
     @include breakpoints.breakpoint(md)
         flex-direction: row !important
         gap: 1rem

@@ -18,6 +18,14 @@ footer h1, footer h2 {
   font-size: 2rem;
 }
 
+.Footer-root__copyright {
+  display: none;
+}
+@media ((min-width: 900px)) {
+  .Footer-root__copyright {
+    display: block;
+  }
+}
 @media ((min-width: 900px)) {
   .Footer-root .lines {
     top: -50rem !important;
@@ -132,7 +140,7 @@ footer h1, footer h2 {
 }
 .How-root__cards article {
   width: 100%;
-  min-width: 31rem;
+  min-width: 10rem;
 }
 
 .Contact-root input, .Contact-root textarea {
@@ -140,11 +148,11 @@ footer h1, footer h2 {
 }
 
 @media ((min-width: 900px)) {
-  .Contact-root__input-container, .Footer-root {
+  .Contact-root__input-container, .Footer-root__container {
     flex-direction: row !important;
     gap: 1rem;
   }
-  .Contact-root__input-container .fullWidth, .Footer-root .fullWidth {
+  .Contact-root__input-container .fullWidth, .Footer-root__container .fullWidth {
     display: flex;
     flex-direction: column;
   }
@@ -347,10 +355,10 @@ table {
   z-index: -1;
 }
 
-.Hero-root, .How-root, .Build-root {
+.How-root, .Build-root {
   position: relative;
 }
-.Hero-root .lines, .How-root .lines, .Build-root .lines {
+.How-root .lines, .Build-root .lines {
   position: absolute;
   top: 0;
   left: 0;
@@ -359,7 +367,7 @@ table {
   z-index: -1;
   opacity: 50%;
 }
-.Hero-root .lines img, .How-root .lines img, .Build-root .lines img {
+.How-root .lines img, .Build-root .lines img {
   width: 100%;
   height: 100%;
   position: absolute;
