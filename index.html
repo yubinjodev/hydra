@@ -19,6 +19,22 @@
         <script src="/javascript/main.js" defer></script>
     </head>
     <body>
+        <aside class="Menu-root">
+            <button class="clickable" style="position: absolute; top: 1rem; right: 1rem; font-size: 3rem; color: white">X</button>
+            <nav>
+                <ul>
+                    <li><a>ABOUT</a></li>
+                    <hr>
+                    <li><a>SERVICES</a></li>
+                    <hr>
+                    <li><a>TECHNOLOGIES</a></li>
+                    <hr>
+                    <li><a>HOW TO</a></li>
+                    <hr>
+                </ul>
+            </nav>
+        </aside>
+
         <header class="Header-root col a-center">
             <nav class="row j-between a-center">
                 <div class="home" class="row j-between a-center">
@@ -40,7 +56,7 @@
                     <button class="gradient-btn gradient-btn__nav-button">JOIN HYDRA</button>
                 </div>
 
-                <div class="options">
+                <div class="options" id="hamburger">
                     <button class="hamburger">
                         <img alt="hamburger menu" src="/assets/svg/icons/hamburger.svg"/>
                     </button>
