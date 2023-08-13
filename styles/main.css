@@ -18,6 +18,20 @@ footer h1, footer h2 {
   font-size: 2rem;
 }
 
+@media ((min-width: 900px)) {
+  .Header-root .options {
+    display: none;
+  }
+}
+.Header-root__links, .Header-root__btns {
+  display: none !important;
+}
+@media ((min-width: 900px)) {
+  .Header-root__links, .Header-root__btns {
+    display: flex !important;
+  }
+}
+
 .Footer-root__copyright {
   display: none;
 }
@@ -277,7 +291,7 @@ h6 {
   font-size: 2.5rem;
 }
 
-p, div, button {
+p, div, button, li, a {
   font-size: 2rem;
 }
 
@@ -337,6 +351,22 @@ table {
   padding-bottom: 2rem;
   border-radius: 5rem;
   border: none;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: white;
+  font-weight: 700;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 5rem;
+  border: 1px solid white;
+}
+
+.gradient-btn__nav-button, .secondary-btn__nav-button {
+  padding: 2rem 4rem;
 }
 
 .Hero-root__cta button:first-of-type {

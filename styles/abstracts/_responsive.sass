@@ -1,5 +1,14 @@
 @use "breakpoints"
 
+.Header-root
+    @include breakpoints.breakpoint(md)
+        .options
+            display: none
+    &__links, &__btns
+        display: none !important
+        @include breakpoints.breakpoint(md)
+            display: flex !important
+
 .Footer-root
     &__copyright
         display: none
