@@ -32,6 +32,9 @@ footer h1, footer h2 {
   }
 }
 
+.Footer-root__socials p {
+  text-align: center;
+}
 .Footer-root__copyright {
   display: none;
 }
@@ -516,7 +519,7 @@ img[alt="arrow right"], img[alt="arrow left"] {
   height: fit-content;
   display: flex;
 }
-.Tech-root h3 {
+.Tech-root h1 {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -619,7 +622,8 @@ img[alt="arrow right"], img[alt="arrow left"] {
   justify-content: center;
   align-items: center;
 }
-.How-root__ellipse h4 {
+.How-root__ellipse div {
+  font-weight: 700;
   margin: 0;
   font-size: 5rem !important;
 }
