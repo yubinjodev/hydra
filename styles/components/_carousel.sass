@@ -2,13 +2,41 @@
 @use "../abstracts/_variables" as _variables
 @use "../abstracts/breakpoints" as breakpoints
 
+.Hero-root
+    .slider-container
+        .slider-wrapper
+            width: 100%
+            height: 100%
+            .slider-nav
+                top: 30% !important
+                background: none
+                padding: 0
+            .slider-nav.left
+                left: -20px
+                transform: rotate(180deg)
+            .slider-nav.right
+                right: -20px
+                transform: rotate(0deg)
+            .slider-4
+                align-items: center
+                .slides
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    gap: 1rem
+                    padding: 1rem
+                    height: 100%
+                    img
+                        width: auto
+                        height: 3rem
+
 .slider-container
-    border: 1px solid red
     padding: 2rem
     width: 100%
     .slider-wrapper
         position: relative
         margin: 0 auto
+        width: 38rem
         .slider-nav
             position: absolute
             top: 45%
@@ -28,8 +56,7 @@
         .slider-nav.right
             right: -20px
             transform: rotate(-90deg)
-        .slider-1, .slider-2, .slider-3
-            border: 1px solid blue
+        .slider-1, .slider-2, .slider-3, .slider-4
             display: flex
             overflow-x: auto
             scroll-snap-type: x mandatory
@@ -38,9 +65,9 @@
                 width: 0px
                 background: transparent
             .slides
-                border: 1px solid green
                 flex: 1 0 100%
                 scroll-snap-align: start
+                min-width: 38rem
 
 .Hero-root
     &__cta
@@ -56,7 +83,7 @@
         @extend .a-center
         .row > .col > p
             margin: 0
-        .row, img[alt="divider"], .row > .col > h2
+        img[alt="divider"], .row > .col > h2
             display: none
             text-align: left !important
         .row:first-of-type
@@ -70,11 +97,11 @@
 
 .How-root
     article
-        h4
+        h2
             font-size: 2.5rem
     &__ellipse
         border-radius: 50%
-        padding: 2rem
+        padding: 1rem
         background: _variables.$gradient-purple-white
         position: relative
         margin: 4rem 0

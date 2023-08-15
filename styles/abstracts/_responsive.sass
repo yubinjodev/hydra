@@ -1,14 +1,31 @@
 @use "breakpoints"
 
+.Hero-root
+    @include breakpoints.breakpoint(sm)
+        .slider-container
+            .slider-wrapper
+                .slider-nav
+                    display: none !important
+                .slider-4
+                    flex-wrap: wrap !important
+                    .slides
+                        width: fit-content
+                        flex: 1
+
 .slider-container
     @include breakpoints.breakpoint(sm)
         .slider-wrapper
+            width: 100% !important
+            margin: 0 !important
             .slider-nav
                 display: none !important
             .slider-1, .slider-2, .slider-3
+                flex-direction: row
                 flex-wrap: wrap !important
-                justify-content: space-around
-                row-gap: 2rem
+                justify-content: space-around !important
+                row-gap: 2rem !important
+                .slides
+                    flex: 0 !important
 
 .Header-root
     @include breakpoints.breakpoint(md)
@@ -61,12 +78,17 @@
             display: flex
 
 .Hero-root
-    &__cta
-        @include breakpoints.breakpoint(lg)
+    @include breakpoints.breakpoint(lg)
+        &__cta
+            .slider-container
+                .slider-wrapper
+                    .slider-4
+                        .slides
+                            gap: 3rem !important
+                            img
+                                height: 6rem !important
             .row, .row > .col > h2, img[alt="divider"]
                 display: flex !important
-            button.clickable
-                display: none
 
 .About-root, .Intro-root, .About-root
     @include breakpoints.breakpoint(md)

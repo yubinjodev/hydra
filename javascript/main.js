@@ -34,13 +34,13 @@ $(document).ready(function () {
   });
 
   $(".slider-nav.left").click(function () {
-    $(this).siblings(".slider-1, .slider-2, .slider-3").animate({
+    $(this).siblings(".slider-1, .slider-2, .slider-3, .slider-4").animate({
       scrollLeft: "-=300",
     });
   });
 
   $(".slider-nav.right").click(function () {
-    $(this).siblings(".slider-1, .slider-2, .slider-3").animate({
+    $(this).siblings(".slider-1, .slider-2, .slider-3, .slider-4").animate({
       scrollLeft: "+=300",
     });
   });
