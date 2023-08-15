@@ -176,9 +176,15 @@ footer h1, footer h2 {
     text-align: left;
   }
 }
+.Hero-root__build img, .About-root__build img {
+  display: none;
+}
 @media ((min-width: 900px)) {
   .Hero-root__build, .About-root__build {
     display: flex;
+  }
+  .Hero-root__build img, .About-root__build img {
+    display: block;
   }
 }
 

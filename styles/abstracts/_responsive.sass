@@ -112,8 +112,12 @@
             align-items: flex-start !important
             text-align: left
     &__build
+        img
+            display: none
         @include breakpoints.breakpoint(md)
             display: flex
+            img
+                display: block
 
 .Build-root, .Tech-root, .How-root
     &__cards, &__card-container
