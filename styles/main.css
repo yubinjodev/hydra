@@ -45,7 +45,21 @@ footer h1, footer h2 {
     flex-wrap: wrap !important;
     justify-content: space-around !important;
     row-gap: 2rem !important;
+    -moz-column-gap: 2rem !important;
+         column-gap: 2rem !important;
   }
+}
+@media ((min-width: 600px)) and ((min-width: 900px)) {
+  .slider-container .slider-wrapper .slider-1, .slider-container .slider-wrapper .slider-2, .slider-container .slider-wrapper .slider-3 {
+    justify-content: flex-start !important;
+  }
+}
+@media ((min-width: 600px)) and ((min-width: 1500px)) {
+  .slider-container .slider-wrapper .slider-1, .slider-container .slider-wrapper .slider-2, .slider-container .slider-wrapper .slider-3 {
+    justify-content: space-around !important;
+  }
+}
+@media ((min-width: 600px)) {
   .slider-container .slider-wrapper .slider-1 .slides, .slider-container .slider-wrapper .slider-2 .slides, .slider-container .slider-wrapper .slider-3 .slides {
     flex: 0 !important;
   }
