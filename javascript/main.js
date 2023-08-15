@@ -13,21 +13,25 @@ $(document).ready(function () {
     $("footer").show();
   });
 
-  $(document).on("click", 'a[href^="#"]', function (event) {
-    event.preventDefault();
+  $(".Header-root__links, .Footer-root__nav").on(
+    "click",
+    'a[href^="#"]',
+    function (event) {
+      event.preventDefault();
 
-    $("html, body").animate(
-      {
-        scrollTop: $($.attr(this, "href")).offset().top,
-      },
-      800
-    );
-  });
+      $("html, body").animate(
+        {
+          scrollTop: $($.attr(this, "href")).offset().top - 150,
+        },
+        800
+      );
+    }
+  );
 
   $("#contact-btn, #join-btn, #touch-btn").click(function () {
     $("html").animate(
       {
-        scrollTop: $("#contact").offset().top,
+        scrollTop: $("#contact").offset().top - 150,
       },
       800
     );
@@ -43,5 +47,21 @@ $(document).ready(function () {
     $(this).siblings(".slider-1, .slider-2, .slider-3, .slider-4").animate({
       scrollLeft: "+=300",
     });
+  });
+
+  $("#menu-about, #menu-build, #menu-tech, #menu-how").click(function (event) {
+    event.preventDefault();
+
+    $(".Menu-root").slideUp();
+    $("header").show();
+    $("main").show();
+    $("footer").show();
+
+    $("html, body").animate(
+      {
+        scrollTop: $($.attr(this, "href")).offset().top - 900,
+      },
+      800
+    );
   });
 });
