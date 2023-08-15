@@ -249,6 +249,11 @@ footer h1, footer h2 {
   }
 }
 
+input,
+textarea {
+  font-size: 2rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
