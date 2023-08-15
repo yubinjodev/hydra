@@ -2,6 +2,46 @@
 @use "../abstracts/_variables" as _variables
 @use "../abstracts/breakpoints" as breakpoints
 
+.slider-container
+    border: 1px solid red
+    padding: 2rem
+    width: 100%
+    .slider-wrapper
+        position: relative
+        margin: 0 auto
+        .slider-nav
+            position: absolute
+            top: 45%
+            transform: translateY(-50%)
+            background: _variables.$gradient-purple-white
+            padding: 1px
+            border-radius: 50%
+            aspect-ratio: 1/1
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                max-width: 5rem
+        .slider-nav.left
+            left: -20px
+            transform: rotate(90deg)
+        .slider-nav.right
+            right: -20px
+            transform: rotate(-90deg)
+        .slider-1, .slider-2, .slider-3
+            border: 1px solid blue
+            display: flex
+            overflow-x: auto
+            scroll-snap-type: x mandatory
+            scroll-behavior: smooth
+            &::-webkit-scrollbar
+                width: 0px
+                background: transparent
+            .slides
+                border: 1px solid green
+                flex: 1 0 100%
+                scroll-snap-align: start
+
 .Hero-root
     &__cta
         width: 100%
@@ -16,7 +56,7 @@
         @extend .a-center
         .row > .col > p
             margin: 0
-        .row, img[alt="divider"], .row > .col > h3
+        .row, img[alt="divider"], .row > .col > h2
             display: none
             text-align: left !important
         .row:first-of-type

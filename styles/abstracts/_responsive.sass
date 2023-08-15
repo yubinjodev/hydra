@@ -1,5 +1,15 @@
 @use "breakpoints"
 
+.slider-container
+    @include breakpoints.breakpoint(sm)
+        .slider-wrapper
+            .slider-nav
+                display: none !important
+            .slider-1, .slider-2, .slider-3
+                flex-wrap: wrap !important
+                justify-content: space-around
+                row-gap: 2rem
+
 .Header-root
     @include breakpoints.breakpoint(md)
         .options
@@ -53,7 +63,7 @@
 .Hero-root
     &__cta
         @include breakpoints.breakpoint(lg)
-            .row, .row > .col > h3, img[alt="divider"]
+            .row, .row > .col > h2, img[alt="divider"]
                 display: flex !important
             button.clickable
                 display: none

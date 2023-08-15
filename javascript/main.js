@@ -32,4 +32,16 @@ $(document).ready(function () {
       800
     );
   });
+
+  $(".slider-nav.left").click(function () {
+    $(this).siblings(".slider-1, .slider-2, .slider-3").animate({
+      scrollLeft: "-=300",
+    });
+  });
+
+  $(".slider-nav.right").click(function () {
+    $(this).siblings(".slider-1, .slider-2, .slider-3").animate({
+      scrollLeft: "+=300",
+    });
+  });
 });
